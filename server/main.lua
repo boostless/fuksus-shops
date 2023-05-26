@@ -15,7 +15,7 @@ lib.callback.register('fuksus-shops:buyItems', function(source, data)
 
     local spend = 0
     local money = xPlayer.getAccount(data.payment).money
-    print(money)
+
     for i=1, #data.items do
         local item = data.items[i]
         spend += item.price * item.amount
