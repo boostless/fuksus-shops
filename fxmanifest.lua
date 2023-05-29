@@ -27,3 +27,9 @@ server_scripts{
 files {
     'ui/dist/**'
 }
+
+dependencies {
+	'ox_inventory',
+    'es_extended',
+	'ox_lib',
+}
