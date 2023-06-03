@@ -1,5 +1,20 @@
+local function getItem()
+
+end
+
 lib.callback.register('fuksus-shops:getConfig', function(source)
     return Config
+end)
+
+lib.callback.register('fuksus-shops:canOpen', function(source, jobs)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    local job = xPlayer.getJob()
+    for k,v in pairs(jobs) do
+        if job.name == k and job.grade >= v then
+            return true
+        end
+    end
+    return false
 end)
 
 lib.callback.register('fuksus-shops:buyItems', function(source, data)

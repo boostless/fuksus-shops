@@ -89,4 +89,27 @@ Config.shops = {
 			vec3(342.99, -1298.26, 32.51)
 		}
 	},
+    PoliceArmoury = {
+		name = 'Police Armoury',
+        description = 'Grab your equipment',
+		jobs = {
+            ['police'] = 0
+        },
+		blip = {
+			id = 110, colour = 84, scale = 0.8
+		},
+        items = {
+			{ type = 'ammo', name = 'ammo-9', price = 5, },
+			{ type = 'ammo', name = 'ammo-rifle', price = 5, },
+			{ type = 'weapon', name = 'WEAPON_FLASHLIGHT', price = 200 },
+			{ type = 'weapon', name = 'WEAPON_NIGHTSTICK', price = 100 },
+		},
+        filters = {
+            weapon = 'Weapons',
+            ammo = 'Ammos'
+        },
+        locations = {
+			vec3(451.51, -979.44, 30.68)
+		}
+	},
 }
