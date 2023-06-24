@@ -21,7 +21,6 @@ end
 
 local function openShop(items, filters, name, description, jobs)
     local canOpen = true
-    print(json.encode(jobs))
     if next(jobs) then
         canOpen = lib.callback.await('fuksus-shops:canOpen', false, jobs)
     end
