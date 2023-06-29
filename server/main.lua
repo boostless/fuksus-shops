@@ -54,7 +54,7 @@ end)
 
 CreateThread(function()
     local itemNames = {}
-    for item, data in pairs(exports.ox_inventory:Items()) do
+    for item, data in pairs(ESX.Items) do
         itemNames[item] = data.label
     end
     for k,v in pairs(Config.shops) do
