@@ -18,6 +18,8 @@ Config.marker = {
     face = true
 }
 
+Config.image_location = '../images/' -- This is default location, if you are using ox_inventory change to nui://ox_inventory/web/images/
+
 Config.shops = {
     General = {
         name = '24/7',

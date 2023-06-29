@@ -32,6 +32,10 @@ local function openShop(items, filters, name, description, jobs)
         type = 'main-container',
         show = true
     })
+    SendNUIMessage({
+        type = 'set-images',
+        location = Config.image_location
+    })
     setLocale()
     SendNUIMessage({
         type = 'shop-container',
