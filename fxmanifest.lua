@@ -25,11 +25,10 @@ server_scripts{
 }
 
 files {
-    'ui/dist/**'
+    'ui/**'
 }
 
 dependencies {
-	'ox_inventory',
     'es_extended',
 	'ox_lib',
 }
