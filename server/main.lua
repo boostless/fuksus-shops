@@ -1,7 +1,3 @@
-local function getItem()
-
-end
-
 lib.callback.register('fuksus-shops:getConfig', function(source)
     return Config
 end)
